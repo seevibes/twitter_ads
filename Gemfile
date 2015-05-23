@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'rake'
 gem 'oauth'
 gem 'minitest'
+gem 'rake'
+
+gemspec
