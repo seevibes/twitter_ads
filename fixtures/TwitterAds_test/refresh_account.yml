@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ads-api.twitter.com/0/accounts/p0r8d3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="YOi6DeIcMNGccGYVEErGhTOpb", oauth_nonce="F9yDDWf1eKW6bnJinjgv8veYU8NcPJd7MtUsq34yC8",
+        oauth_signature="W0GH6XwChzDrU6E061Hse5XgmY4%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1432627581", oauth_token="152397343-F2sSm9WuEcb7luVmppKrEXO4y6QDQzb6wkrxBgz0",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '336'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 26 May 2015 08:06:22 GMT
+      Server:
+      - tsa_b
+      Set-Cookie:
+      - guest_id=v1%3A143262758244808679; Domain=.twitter.com; Path=/; Expires=Thu,
+        25-May-2017 08:06:22 UTC
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write-directmessages
+      X-Connection-Hash:
+      - 1b3dc94056b4755c53993d10618fa9ba
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '2000'
+      X-Rate-Limit-Remaining:
+      - '1999'
+      X-Rate-Limit-Reset:
+      - '1432628482'
+      X-Response-Time:
+      - '20'
+      X-Runtime:
+      - '0.010122'
+      X-Transaction:
+      - 150ecd4fb71a19c0
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: US-ASCII
+      string: ! '{"data_type":"account","data":{"name":"Thomas Landspurg","timezone":"America\/Los_Angeles","timezone_switch_at":null,"id":"p0r8d3","created_at":"2013-06-13T20:28:37Z","salt":"fc4d84fc78943cc321111af0a140cd5a","updated_at":"2014-12-02T03:06:17Z","approval_status":"ACCEPTED","deleted":false},"request":{"params":{"account_id":"p0r8d3"}}}'
+    http_version: 
+  recorded_at: Tue, 26 May 2015 08:06:22 GMT
+recorded_with: VCR 2.9.3

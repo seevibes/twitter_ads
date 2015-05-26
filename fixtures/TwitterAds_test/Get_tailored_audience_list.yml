@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ads-api.twitter.com/0/accounts/p0r8d3/tailored_audience_changes
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="YOi6DeIcMNGccGYVEErGhTOpb", oauth_nonce="ZjRuZVflMFFRpdeblooh55UANIH7jqstoPDCXG29528",
+        oauth_signature="riODRetm39MVJ9HuukyG5xgWsBU%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1432627596", oauth_token="152397343-F2sSm9WuEcb7luVmppKrEXO4y6QDQzb6wkrxBgz0",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '2718'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 26 May 2015 08:06:37 GMT
+      Server:
+      - tsa_b
+      Set-Cookie:
+      - guest_id=v1%3A143262759759459681; Domain=.twitter.com; Path=/; Expires=Thu,
+        25-May-2017 08:06:37 UTC
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write-directmessages
+      X-Connection-Hash:
+      - cd272dfdab33991983adb0a3724c2d8e
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '2000'
+      X-Rate-Limit-Remaining:
+      - '1996'
+      X-Rate-Limit-Reset:
+      - '1432628482'
+      X-Response-Time:
+      - '27'
+      X-Runtime:
+      - '0.017393'
+      X-Transaction:
+      - cb570eee7fb7c829
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: US-ASCII
+      string: ! '{"request":{"params":{"account_id":"p0r8d3"}},"data":[{"input_file_path":"\/ta_partner\/2071231\/0RMNhLpRRneAym6","tailored_audience_id":"s6mx","state":"COMPLETED","id":"5gyv","operation":"ADD"},{"input_file_path":"\/ta_partner\/152397343\/NVmFg53IiWRx5uK","tailored_audience_id":"sd78","state":"COMPLETED","id":"66hp","operation":"ADD"},{"input_file_path":"\/ta_partner\/152397343\/p8DfZN00LzQ3pAN","tailored_audience_id":"sd78","state":"COMPLETED","id":"66i7","operation":"ADD"},{"input_file_path":"\/ta_partner\/152397343\/VPGMSoRem0X2kh-","tailored_audience_id":"sd78","state":"COMPLETED","id":"66i9","operation":"ADD"},{"input_file_path":"\/ta_partner\/152397343\/NVmFg53IiWRx5uK","tailored_audience_id":"sd78","state":"COMPLETED","id":"6aax","operation":"ADD"},{"input_file_path":"\/ta_partner\/152397343\/NVmFg53IiWRx5uK","tailored_audience_id":"sd78","state":"COMPLETED","id":"6lyn","operation":"ADD"},{"input_file_path":"\/ta_partner\/152397343\/NVmFg53IiWRx5uK","tailored_audience_id":"sdpo","state":"COMPLETED","id":"6lyp","operation":"ADD"},{"input_file_path":"\/ta_partner\/152397343\/NVmFg53IiWRx5uK","tailored_audience_id":"sdpo","state":"COMPLETED","id":"6lyq","operation":"ADD"},{"input_file_path":"\/ta_partner\/152397343\/NVmFg53IiWRx5uK","tailored_audience_id":"sdpo","state":"COMPLETED","id":"6lyr","operation":"ADD"},{"input_file_path":"\/ta_partner\/152397343\/qhU6ojPQTkZtzwz","tailored_audience_id":"sdpo","state":"COMPLETED","id":"6lys","operation":"ADD"},{"input_file_path":"\/ta_partner\/152397343\/9gl55fStnwKE0Di","tailored_audience_id":"sdpo","state":"COMPLETED","id":"6lyt","operation":"ADD"},{"input_file_path":"\/ta_partner\/152397343\/eY5U3C930T3ICjU","tailored_audience_id":"sdpo","state":"COMPLETED","id":"6lyu","operation":"ADD"},{"input_file_path":"\/ta_partner\/152397343\/ND7yrmV1J5vEIv_","tailored_audience_id":"sdpo","state":"COMPLETED","id":"6lyx","operation":"ADD"},{"input_file_path":"\/ta_partner\/152397343\/Pe99JV7zz4rQWYM","tailored_audience_id":"sdpo","state":"COMPLETED","id":"6mbd","operation":"ADD"},{"input_file_path":"\/ta_partner\/152397343\/vM-G9kCdZESxjvQ.txt","tailored_audience_id":"sdpo","state":"COMPLETED","id":"6md1","operation":"ADD"},{"input_file_path":"\/ta_partner\/152397343\/JGpo98jJOs89Lyq.txt","tailored_audience_id":"sdpo","state":"COMPLETED","id":"6md2","operation":"ADD"},{"input_file_path":"\/ta_partner\/152397343\/UVGACUNE1Y9Bv_L.txt","tailored_audience_id":"sdpo","state":"COMPLETED","id":"6md3","operation":"ADD"},{"input_file_path":"\/ta_partner\/152397343\/Y4w4TL4Yd-2p4tI.txt","tailored_audience_id":"sdpo","state":"COMPLETED","id":"6md5","operation":"ADD"}],"data_type":"tailored_audience_change","total_count":18,"next_cursor":null}'
+    http_version: 
+  recorded_at: Tue, 26 May 2015 08:06:37 GMT
+recorded_with: VCR 2.9.3

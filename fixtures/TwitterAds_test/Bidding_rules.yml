@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ads-api.twitter.com/0/bidding_rules
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="YOi6DeIcMNGccGYVEErGhTOpb", oauth_nonce="CiCwhSckV6MI0j3dYQHDSUA338Tnrr2l7yV6bjySnGQ",
+        oauth_signature="ZPA0VHDVuuYFaL7LnAy3R8qC10k%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1432627595", oauth_token="152397343-F2sSm9WuEcb7luVmppKrEXO4y6QDQzb6wkrxBgz0",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '8202'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 26 May 2015 08:06:36 GMT
+      Server:
+      - tsa_b
+      Set-Cookie:
+      - guest_id=v1%3A143262759641289681; Domain=.twitter.com; Path=/; Expires=Thu,
+        25-May-2017 08:06:36 UTC
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write-directmessages
+      X-Connection-Hash:
+      - d512b06b05b4fb354599ce21b9b14011
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '400'
+      X-Rate-Limit-Remaining:
+      - '399'
+      X-Rate-Limit-Reset:
+      - '1432628496'
+      X-Response-Time:
+      - '10'
+      X-Runtime:
+      - '8.44E-4'
+      X-Transaction:
+      - 5db017d6e8d35745
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: US-ASCII
+      string: ! '{"data_type":"bidding_rule","data":[{"currency":"AED","minimum_cpe_bid_local_micro":40000,"maximum_cpe_bid_local_micro":4000000000,"minimum_denomination":10000},{"currency":"ALL","minimum_cpe_bid_local_micro":1200000,"maximum_cpe_bid_local_micro":120000000000,"minimum_denomination":10000},{"currency":"ARS","minimum_cpe_bid_local_micro":50000,"maximum_cpe_bid_local_micro":5000000000,"minimum_denomination":10000},{"currency":"AUD","minimum_cpe_bid_local_micro":10000,"maximum_cpe_bid_local_micro":1000000000,"minimum_denomination":10000},{"currency":"BAM","minimum_cpe_bid_local_micro":20000,"maximum_cpe_bid_local_micro":2000000000,"minimum_denomination":10000},{"currency":"BGN","minimum_cpe_bid_local_micro":20000,"maximum_cpe_bid_local_micro":2000000000,"minimum_denomination":10000},{"currency":"BHD","minimum_cpe_bid_local_micro":4000,"maximum_cpe_bid_local_micro":400000000,"minimum_denomination":1000},{"currency":"BRL","minimum_cpe_bid_local_micro":20000,"maximum_cpe_bid_local_micro":2000000000,"minimum_denomination":10000},{"currency":"BYR","minimum_cpe_bid_local_micro":100000000,"maximum_cpe_bid_local_micro":10000000000000,"minimum_denomination":1000000},{"currency":"CAD","minimum_cpe_bid_local_micro":10000,"maximum_cpe_bid_local_micro":1000000000,"minimum_denomination":10000},{"currency":"CHF","minimum_cpe_bid_local_micro":10000,"maximum_cpe_bid_local_micro":880000000,"minimum_denomination":10000},{"currency":"CLP","minimum_cpe_bid_local_micro":5000000,"maximum_cpe_bid_local_micro":500000000000,"minimum_denomination":1000000},{"currency":"CNY","minimum_cpe_bid_local_micro":60000,"maximum_cpe_bid_local_micro":6140000000,"minimum_denomination":100000},{"currency":"COP","minimum_cpe_bid_local_micro":18000000,"maximum_cpe_bid_local_micro":1800000000000,"minimum_denomination":1000000},{"currency":"CZK","minimum_cpe_bid_local_micro":240000,"maximum_cpe_bid_local_micro":24000000000,"minimum_denomination":10000},{"currency":"DKK","minimum_cpe_bid_local_micro":50000,"maximum_cpe_bid_local_micro":5400000000,"minimum_denomination":10000},{"currency":"DZD","minimum_cpe_bid_local_micro":800000,"maximum_cpe_bid_local_micro":80000000000,"minimum_denomination":10000},{"currency":"EGP","minimum_cpe_bid_local_micro":60000,"maximum_cpe_bid_local_micro":6000000000,"minimum_denomination":10000},{"currency":"EUR","minimum_cpe_bid_local_micro":10000,"maximum_cpe_bid_local_micro":1000000000,"minimum_denomination":10000},{"currency":"GBP","minimum_cpe_bid_local_micro":10000,"maximum_cpe_bid_local_micro":1000000000,"minimum_denomination":10000},{"currency":"GHS","minimum_cpe_bid_local_micro":30000,"maximum_cpe_bid_local_micro":2800000000,"minimum_denomination":10000},{"currency":"GTQ","minimum_cpe_bid_local_micro":80000,"maximum_cpe_bid_local_micro":7800000000,"minimum_denomination":10000},{"currency":"HKD","minimum_cpe_bid_local_micro":80000,"maximum_cpe_bid_local_micro":8000000000,"minimum_denomination":10000},{"currency":"HRK","minimum_cpe_bid_local_micro":80000,"maximum_cpe_bid_local_micro":8000000000,"minimum_denomination":10000},{"currency":"HUF","minimum_cpe_bid_local_micro":2700000,"maximum_cpe_bid_local_micro":270000000000,"minimum_denomination":10000},{"currency":"IDR","minimum_cpe_bid_local_micro":100000000,"maximum_cpe_bid_local_micro":10000000000000,"minimum_denomination":1000000},{"currency":"ILS","minimum_cpe_bid_local_micro":40000,"maximum_cpe_bid_local_micro":3500000000,"minimum_denomination":10000},{"currency":"INR","minimum_cpe_bid_local_micro":540000,"maximum_cpe_bid_local_micro":54000000000,"minimum_denomination":10000},{"currency":"IQD","minimum_cpe_bid_local_micro":12000000,"maximum_cpe_bid_local_micro":1200000000000,"minimum_denomination":1000000},{"currency":"JPY","minimum_cpe_bid_local_micro":1000000,"maximum_cpe_bid_local_micro":100000000000,"minimum_denomination":1000000},{"currency":"KES","minimum_cpe_bid_local_micro":870000,"maximum_cpe_bid_local_micro":87000000000,"minimum_denomination":10000},{"currency":"KRW","minimum_cpe_bid_local_micro":11000000,"maximum_cpe_bid_local_micro":1100000000000,"minimum_denomination":1000000},{"currency":"KWD","minimum_cpe_bid_local_micro":3000,"maximum_cpe_bid_local_micro":300000000,"minimum_denomination":1000},{"currency":"LBP","minimum_cpe_bid_local_micro":15000000,"maximum_cpe_bid_local_micro":1500000000000,"minimum_denomination":10000},{"currency":"MAD","minimum_cpe_bid_local_micro":90000,"maximum_cpe_bid_local_micro":9000000000,"minimum_denomination":10000},{"currency":"MKD","minimum_cpe_bid_local_micro":540000,"maximum_cpe_bid_local_micro":54000000000,"minimum_denomination":10000},{"currency":"MXN","minimum_cpe_bid_local_micro":130000,"maximum_cpe_bid_local_micro":13000000000,"minimum_denomination":10000},{"currency":"MYR","minimum_cpe_bid_local_micro":30000,"maximum_cpe_bid_local_micro":3000000000,"minimum_denomination":10000},{"currency":"NGN","minimum_cpe_bid_local_micro":1600000,"maximum_cpe_bid_local_micro":160000000000,"minimum_denomination":10000},{"currency":"NOK","minimum_cpe_bid_local_micro":60000,"maximum_cpe_bid_local_micro":5900000000,"minimum_denomination":10000},{"currency":"NZD","minimum_cpe_bid_local_micro":10000,"maximum_cpe_bid_local_micro":1000000000,"minimum_denomination":10000},{"currency":"PEN","minimum_cpe_bid_local_micro":30000,"maximum_cpe_bid_local_micro":2800000000,"minimum_denomination":10000},{"currency":"PHP","minimum_cpe_bid_local_micro":420000,"maximum_cpe_bid_local_micro":42000000000,"minimum_denomination":10000},{"currency":"PKR","minimum_cpe_bid_local_micro":1000000,"maximum_cpe_bid_local_micro":100000000000,"minimum_denomination":10000},{"currency":"PLN","minimum_cpe_bid_local_micro":30000,"maximum_cpe_bid_local_micro":3000000000,"minimum_denomination":10000},{"currency":"QAR","minimum_cpe_bid_local_micro":40000,"maximum_cpe_bid_local_micro":4000000000,"minimum_denomination":10000},{"currency":"RON","minimum_cpe_bid_local_micro":40000,"maximum_cpe_bid_local_micro":4000000000,"minimum_denomination":10000},{"currency":"RSD","minimum_cpe_bid_local_micro":1000000,"maximum_cpe_bid_local_micro":100000000000,"minimum_denomination":10000},{"currency":"RUB","minimum_cpe_bid_local_micro":350000,"maximum_cpe_bid_local_micro":35000000000,"minimum_denomination":10000},{"currency":"SAR","minimum_cpe_bid_local_micro":40000,"maximum_cpe_bid_local_micro":4000000000,"minimum_denomination":10000},{"currency":"SEK","minimum_cpe_bid_local_micro":70000,"maximum_cpe_bid_local_micro":6500000000,"minimum_denomination":10000},{"currency":"SGD","minimum_cpe_bid_local_micro":10000,"maximum_cpe_bid_local_micro":1000000000,"minimum_denomination":10000},{"currency":"THB","minimum_cpe_bid_local_micro":310000,"maximum_cpe_bid_local_micro":31000000000,"minimum_denomination":10000},{"currency":"TND","minimum_cpe_bid_local_micro":16000,"maximum_cpe_bid_local_micro":1600000000,"minimum_denomination":1000},{"currency":"TRY","minimum_cpe_bid_local_micro":20000,"maximum_cpe_bid_local_micro":2000000000,"minimum_denomination":10000},{"currency":"TWD","minimum_cpe_bid_local_micro":300000,"maximum_cpe_bid_local_micro":30042000000,"minimum_denomination":100000},{"currency":"TZS","minimum_cpe_bid_local_micro":16000000,"maximum_cpe_bid_local_micro":1600000000000,"minimum_denomination":10000},{"currency":"UAH","minimum_cpe_bid_local_micro":120000,"maximum_cpe_bid_local_micro":12000000000,"minimum_denomination":10000},{"currency":"UGX","minimum_cpe_bid_local_micro":25000000,"maximum_cpe_bid_local_micro":2500000000000,"minimum_denomination":1000000},{"currency":"USD","minimum_cpe_bid_local_micro":10000,"maximum_cpe_bid_local_micro":1000000000,"minimum_denomination":10000},{"currency":"VEF","minimum_cpe_bid_local_micro":50000,"maximum_cpe_bid_local_micro":5000000000,"minimum_denomination":10000},{"currency":"VND","minimum_cpe_bid_local_micro":200000000,"maximum_cpe_bid_local_micro":20000000000000,"minimum_denomination":1000000},{"currency":"ZAR","minimum_cpe_bid_local_micro":110000,"maximum_cpe_bid_local_micro":11000000000,"minimum_denomination":10000},{"currency":"ZMW","minimum_cpe_bid_local_micro":60000,"maximum_cpe_bid_local_micro":6100000000,"minimum_denomination":10000}],"request":{"params":{}},"total_count":64}'
+    http_version: 
+  recorded_at: Tue, 26 May 2015 08:06:36 GMT
+recorded_with: VCR 2.9.3

@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ads-api.twitter.com/0/accounts/p0r8d3/targeting_criteria
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="YOi6DeIcMNGccGYVEErGhTOpb", oauth_nonce="5IoDeZTstgETFNCaQ4TgBqeVTvUWpZMhuzljW7EiJ8c",
+        oauth_signature="ITxKZJYf%2FzKn8UXrQpBQkB9vklM%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1432627582", oauth_token="152397343-F2sSm9WuEcb7luVmppKrEXO4y6QDQzb6wkrxBgz0",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '166'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 26 May 2015 08:06:23 GMT
+      Server:
+      - tsa_a
+      Set-Cookie:
+      - guest_id=v1%3A143262758365379528; Domain=.twitter.com; Path=/; Expires=Thu,
+        25-May-2017 08:06:23 UTC
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write-directmessages
+      X-Connection-Hash:
+      - dd3140cf8a152963b9680c27a87c15e5
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '2000'
+      X-Rate-Limit-Remaining:
+      - '1999'
+      X-Rate-Limit-Reset:
+      - '1432628483'
+      X-Response-Time:
+      - '23'
+      X-Runtime:
+      - '0.013857'
+      X-Transaction:
+      - a549282ee8b9a46b
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: US-ASCII
+      string: ! '{"errors":[{"code":"MISSING_PARAMETER","message":"\"line_item_id\"
+        is a required parameter","parameter":"line_item_id"}],"request":{"params":{"account_id":"p0r8d3"}}}'
+    http_version: 
+  recorded_at: Tue, 26 May 2015 08:06:24 GMT
+recorded_with: VCR 2.9.3

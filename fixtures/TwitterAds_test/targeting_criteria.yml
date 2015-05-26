@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ads-api.twitter.com/0/accounts/p0r8d3/targeting_criteria/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="YOi6DeIcMNGccGYVEErGhTOpb", oauth_nonce="hQJ3zEQw4IiPCu1PJwqgrnckqmxaTjPifoPKrnWYH4",
+        oauth_signature="06NjDVDggKzIfV8eVogaLD0xy6g%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1432627572", oauth_token="152397343-F2sSm9WuEcb7luVmppKrEXO4y6QDQzb6wkrxBgz0",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '194'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 26 May 2015 08:06:20 GMT
+      Server:
+      - tsa_a
+      Set-Cookie:
+      - guest_id=v1%3A143262758011317525; Domain=.twitter.com; Path=/; Expires=Thu,
+        25-May-2017 08:06:20 UTC
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write-directmessages
+      X-Connection-Hash:
+      - aa4ef99b08a20027b0f81790295f0198
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '2000'
+      X-Rate-Limit-Remaining:
+      - '1999'
+      X-Rate-Limit-Reset:
+      - '1432628480'
+      X-Response-Time:
+      - '112'
+      X-Runtime:
+      - '0.102864'
+      X-Transaction:
+      - fd5eb5087a5d8769
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: US-ASCII
+      string: ! '{"errors":[{"code":"TARGETING_CRITERION_NOT_FOUND","message":"Targeting
+        Criterion 1 was not found for Account p0r8d3"}],"request":{"params":{"targeting_criterion_id":"1","account_id":"p0r8d3"}}}'
+    http_version: 
+  recorded_at: Tue, 26 May 2015 08:06:20 GMT
+recorded_with: VCR 2.9.3

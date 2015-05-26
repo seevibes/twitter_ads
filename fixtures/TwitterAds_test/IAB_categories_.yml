@@ -1,0 +1,136 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ads-api.twitter.com/0/iab_categories
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="YOi6DeIcMNGccGYVEErGhTOpb", oauth_nonce="uwAjFBKRwuXxSlidpYFuzbRZogxNurzYcm8aaAt6yD0",
+        oauth_signature="%2B44jtZ9tYG8OQVmQqZSCzRSTvug%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1432627591", oauth_token="152397343-F2sSm9WuEcb7luVmppKrEXO4y6QDQzb6wkrxBgz0",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '11789'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 26 May 2015 08:06:33 GMT
+      Server:
+      - tsa_a
+      Set-Cookie:
+      - guest_id=v1%3A143262759297207037; Domain=.twitter.com; Path=/; Expires=Thu,
+        25-May-2017 08:06:33 UTC
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write-directmessages
+      X-Connection-Hash:
+      - 1faf7cce22feedeadf21a11b66de5b85
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '15'
+      X-Rate-Limit-Remaining:
+      - '14'
+      X-Rate-Limit-Reset:
+      - '1432628492'
+      X-Response-Time:
+      - '47'
+      X-Runtime:
+      - '0.035996'
+      X-Transaction:
+      - c51040957e7c6e86
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: US-ASCII
+      string: ! '{"request":{"params":{}},"data":[{"id":"IAB1","parent_id":null,"name":"Arts
+        & Entertainment"},{"id":"IAB1-1","parent_id":"IAB1","name":"Books & Literature"},{"id":"IAB1-2","parent_id":"IAB1","name":"Celebrity
+        Fan\/Gossip"},{"id":"IAB1-3","parent_id":"IAB1","name":"Fine Art"},{"id":"IAB1-4","parent_id":"IAB1","name":"Humor"},{"id":"IAB1-5","parent_id":"IAB1","name":"Movies"},{"id":"IAB1-6","parent_id":"IAB1","name":"Music"},{"id":"IAB1-7","parent_id":"IAB1","name":"Television"},{"id":"IAB2","parent_id":null,"name":"Automotive"},{"id":"IAB2-1","parent_id":"IAB2","name":"Auto
+        Parts"},{"id":"IAB2-2","parent_id":"IAB2","name":"Auto Repair"},{"id":"IAB2-3","parent_id":"IAB2","name":"Buying\/Selling
+        Cars"},{"id":"IAB2-4","parent_id":"IAB2","name":"Car Culture"},{"id":"IAB2-5","parent_id":"IAB2","name":"Certified
+        Pre-Owned"},{"id":"IAB2-6","parent_id":"IAB2","name":"Convertible"},{"id":"IAB2-7","parent_id":"IAB2","name":"Coupe"},{"id":"IAB2-8","parent_id":"IAB2","name":"Crossover"},{"id":"IAB2-9","parent_id":"IAB2","name":"Diesel"},{"id":"IAB2-10","parent_id":"IAB2","name":"Electric
+        Vehicle"},{"id":"IAB2-11","parent_id":"IAB2","name":"Hatchback"},{"id":"IAB2-12","parent_id":"IAB2","name":"Hybrid"},{"id":"IAB2-13","parent_id":"IAB2","name":"Luxury"},{"id":"IAB2-14","parent_id":"IAB2","name":"MiniVan"},{"id":"IAB2-15","parent_id":"IAB2","name":"Mororcycles"},{"id":"IAB2-16","parent_id":"IAB2","name":"Off-Road
+        Vehicles"},{"id":"IAB2-17","parent_id":"IAB2","name":"Performance Vehicles"},{"id":"IAB2-18","parent_id":"IAB2","name":"Pickup"},{"id":"IAB2-19","parent_id":"IAB2","name":"Road-Side
+        Assistance"},{"id":"IAB2-20","parent_id":"IAB2","name":"Sedan"},{"id":"IAB2-21","parent_id":"IAB2","name":"Trucks
+        & Accessories"},{"id":"IAB2-22","parent_id":"IAB2","name":"Vintage Cars"},{"id":"IAB2-23","parent_id":"IAB2","name":"Wagon"},{"id":"IAB3","parent_id":null,"name":"Business"},{"id":"IAB3-1","parent_id":"IAB3","name":"Advertising"},{"id":"IAB3-2","parent_id":"IAB3","name":"Agriculture"},{"id":"IAB3-3","parent_id":"IAB3","name":"Biotech\/Biomedical"},{"id":"IAB3-4","parent_id":"IAB3","name":"Business
+        Software"},{"id":"IAB3-5","parent_id":"IAB3","name":"Construction"},{"id":"IAB3-6","parent_id":"IAB3","name":"Forestry"},{"id":"IAB3-7","parent_id":"IAB3","name":"Government"},{"id":"IAB3-8","parent_id":"IAB3","name":"Green
+        Solutions"},{"id":"IAB3-9","parent_id":"IAB3","name":"Human Resources"},{"id":"IAB3-10","parent_id":"IAB3","name":"Logistics"},{"id":"IAB3-11","parent_id":"IAB3","name":"Marketing"},{"id":"IAB3-12","parent_id":"IAB3","name":"Metals"},{"id":"IAB4","parent_id":null,"name":"Careers"},{"id":"IAB4-1","parent_id":"IAB4","name":"Career
+        Planning"},{"id":"IAB4-2","parent_id":"IAB4","name":"College"},{"id":"IAB4-3","parent_id":"IAB4","name":"Financial
+        Aid"},{"id":"IAB4-4","parent_id":"IAB4","name":"Job Fairs"},{"id":"IAB4-5","parent_id":"IAB4","name":"Job
+        Search"},{"id":"IAB4-6","parent_id":"IAB4","name":"Resume Writing\/Advice"},{"id":"IAB4-7","parent_id":"IAB4","name":"Nursing"},{"id":"IAB4-8","parent_id":"IAB4","name":"Scholarships"},{"id":"IAB4-9","parent_id":"IAB4","name":"Telecommuting"},{"id":"IAB4-10","parent_id":"IAB4","name":"U.S.
+        Military"},{"id":"IAB4-11","parent_id":"IAB4","name":"Career Advice"},{"id":"IAB5","parent_id":null,"name":"Education"},{"id":"IAB5-1","parent_id":"IAB5","name":"7-12
+        Education"},{"id":"IAB5-2","parent_id":"IAB5","name":"Adult Education"},{"id":"IAB5-3","parent_id":"IAB5","name":"Art
+        History"},{"id":"IAB5-4","parent_id":"IAB5","name":"Colledge Administration"},{"id":"IAB5-5","parent_id":"IAB5","name":"College
+        Life"},{"id":"IAB5-6","parent_id":"IAB5","name":"Distance Learning"},{"id":"IAB5-7","parent_id":"IAB5","name":"English
+        as a 2nd Language"},{"id":"IAB5-8","parent_id":"IAB5","name":"Language Learning"},{"id":"IAB5-9","parent_id":"IAB5","name":"Graduate
+        School"},{"id":"IAB5-10","parent_id":"IAB5","name":"Homeschooling"},{"id":"IAB5-11","parent_id":"IAB5","name":"Homework\/Study
+        Tips"},{"id":"IAB5-12","parent_id":"IAB5","name":"K-6 Educators"},{"id":"IAB5-13","parent_id":"IAB5","name":"Private
+        School"},{"id":"IAB5-14","parent_id":"IAB5","name":"Special Education"},{"id":"IAB5-15","parent_id":"IAB5","name":"Studying
+        Business"},{"id":"IAB6","parent_id":null,"name":"Family & Parenting"},{"id":"IAB6-1","parent_id":"IAB6","name":"Adoption"},{"id":"IAB6-2","parent_id":"IAB6","name":"Babies
+        & Toddlers"},{"id":"IAB6-3","parent_id":"IAB6","name":"Daycare\/Pre School"},{"id":"IAB6-4","parent_id":"IAB6","name":"Family
+        Internet"},{"id":"IAB6-5","parent_id":"IAB6","name":"Parenting - K-6 Kids"},{"id":"IAB6-6","parent_id":"IAB6","name":"Parenting
+        teens"},{"id":"IAB6-7","parent_id":"IAB6","name":"Pregnancy"},{"id":"IAB6-8","parent_id":"IAB6","name":"Special
+        Needs Kids"},{"id":"IAB6-9","parent_id":"IAB6","name":"Eldercare"},{"id":"IAB7","parent_id":null,"name":"Health
+        & Fitness"},{"id":"IAB7-1","parent_id":"IAB7","name":"Exercise"},{"id":"IAB7-2","parent_id":"IAB7","name":"A.D.D."},{"id":"IAB7-3","parent_id":"IAB7","name":"AIDS\/HIV"},{"id":"IAB7-4","parent_id":"IAB7","name":"Allergies"},{"id":"IAB7-5","parent_id":"IAB7","name":"Alternative
+        Medicine"},{"id":"IAB7-6","parent_id":"IAB7","name":"Arthritis"},{"id":"IAB7-7","parent_id":"IAB7","name":"Asthma"},{"id":"IAB7-8","parent_id":"IAB7","name":"Autism\/PDD"},{"id":"IAB7-9","parent_id":"IAB7","name":"Bipolar
+        Disorder"},{"id":"IAB7-10","parent_id":"IAB7","name":"Brain Tumor"},{"id":"IAB7-11","parent_id":"IAB7","name":"Cancer"},{"id":"IAB7-12","parent_id":"IAB7","name":"Cholesterol"},{"id":"IAB7-13","parent_id":"IAB7","name":"Chronic
+        Fatigue Syndrome"},{"id":"IAB7-14","parent_id":"IAB7","name":"Chronic Pain"},{"id":"IAB7-15","parent_id":"IAB7","name":"Cold
+        & Flu"},{"id":"IAB7-16","parent_id":"IAB7","name":"Deafness"},{"id":"IAB7-17","parent_id":"IAB7","name":"Dental
+        Care"},{"id":"IAB7-18","parent_id":"IAB7","name":"Depression"},{"id":"IAB7-19","parent_id":"IAB7","name":"Dermatology"},{"id":"IAB7-20","parent_id":"IAB7","name":"Diabetes"},{"id":"IAB7-21","parent_id":"IAB7","name":"Epilepsy"},{"id":"IAB7-22","parent_id":"IAB7","name":"GERD\/Acid
+        Reflux"},{"id":"IAB7-23","parent_id":"IAB7","name":"Headaches\/Migraines"},{"id":"IAB7-24","parent_id":"IAB7","name":"Heart
+        Disease"},{"id":"IAB7-25","parent_id":"IAB7","name":"Herbs for Health"},{"id":"IAB7-26","parent_id":"IAB7","name":"Holistic
+        Healing"},{"id":"IAB7-27","parent_id":"IAB7","name":"IBS\/Crohn''s Disease"},{"id":"IAB7-28","parent_id":"IAB7","name":"Incest\/Abuse
+        Support"},{"id":"IAB7-29","parent_id":"IAB7","name":"Incontinence"},{"id":"IAB7-30","parent_id":"IAB7","name":"Infertility"},{"id":"IAB7-31","parent_id":"IAB7","name":"Men''s
+        Health"},{"id":"IAB7-32","parent_id":"IAB7","name":"Nutrition"},{"id":"IAB7-33","parent_id":"IAB7","name":"Orthopedics"},{"id":"IAB7-34","parent_id":"IAB7","name":"Panic\/Anxiety
+        Disorders"},{"id":"IAB7-35","parent_id":"IAB7","name":"Pediatrics"},{"id":"IAB7-36","parent_id":"IAB7","name":"Physical
+        Therapy"},{"id":"IAB7-37","parent_id":"IAB7","name":"Psychology\/Psychiatry"},{"id":"IAB7-38","parent_id":"IAB7","name":"Senor
+        Health"},{"id":"IAB7-39","parent_id":"IAB7","name":"Sexuality"},{"id":"IAB7-40","parent_id":"IAB7","name":"Sleep
+        Disorders"},{"id":"IAB7-41","parent_id":"IAB7","name":"Smoking Cessation"},{"id":"IAB7-42","parent_id":"IAB7","name":"Substance
+        Abuse"},{"id":"IAB7-43","parent_id":"IAB7","name":"Thyroid Disease"},{"id":"IAB7-44","parent_id":"IAB7","name":"Weight
+        Loss"},{"id":"IAB7-45","parent_id":"IAB7","name":"Women''s Health"},{"id":"IAB8","parent_id":null,"name":"Food
+        & Drink"},{"id":"IAB8-1","parent_id":"IAB8","name":"American Cuisine"},{"id":"IAB8-2","parent_id":"IAB8","name":"Barbecues
+        & Grilling"},{"id":"IAB8-3","parent_id":"IAB8","name":"Cajun\/Creole"},{"id":"IAB8-4","parent_id":"IAB8","name":"Chinese
+        Cuisine"},{"id":"IAB8-5","parent_id":"IAB8","name":"Cocktails\/Beer"},{"id":"IAB8-6","parent_id":"IAB8","name":"Coffee\/Tea"},{"id":"IAB8-7","parent_id":"IAB8","name":"Cuisine-Specific"},{"id":"IAB8-8","parent_id":"IAB8","name":"Desserts
+        & Baking"},{"id":"IAB8-9","parent_id":"IAB8","name":"Dining Out"},{"id":"IAB8-10","parent_id":"IAB8","name":"Food
+        Allergies"},{"id":"IAB8-11","parent_id":"IAB8","name":"French Cuisine"},{"id":"IAB8-12","parent_id":"IAB8","name":"Health\/Lowfat
+        Cooking"},{"id":"IAB8-13","parent_id":"IAB8","name":"Italian Cuisine"},{"id":"IAB8-14","parent_id":"IAB8","name":"Japanese
+        Cuisine"},{"id":"IAB8-15","parent_id":"IAB8","name":"Mexican Cuisine"},{"id":"IAB8-16","parent_id":"IAB8","name":"Vegan"},{"id":"IAB8-17","parent_id":"IAB8","name":"Vegetarian"},{"id":"IAB8-18","parent_id":"IAB8","name":"Wine"},{"id":"IAB9","parent_id":null,"name":"Hobbies
+        & Interests"},{"id":"IAB9-1","parent_id":"IAB9","name":"Art\/Technology"},{"id":"IAB9-2","parent_id":"IAB9","name":"Arts
+        & Crafts"},{"id":"IAB9-3","parent_id":"IAB9","name":"Beadwork"},{"id":"IAB9-4","parent_id":"IAB9","name":"Birdwatching"},{"id":"IAB9-5","parent_id":"IAB9","name":"Board
+        Games\/Puzzles"},{"id":"IAB9-6","parent_id":"IAB9","name":"Candle & Soap Making"},{"id":"IAB9-7","parent_id":"IAB9","name":"Card
+        Games"},{"id":"IAB9-8","parent_id":"IAB9","name":"Chess"},{"id":"IAB9-9","parent_id":"IAB9","name":"Cigars"},{"id":"IAB9-10","parent_id":"IAB9","name":"Collecting"},{"id":"IAB9-11","parent_id":"IAB9","name":"Comic
+        Books"},{"id":"IAB9-12","parent_id":"IAB9","name":"Drawing\/Sketching"},{"id":"IAB9-13","parent_id":"IAB9","name":"Freelance
+        Writing"},{"id":"IAB9-14","parent_id":"IAB9","name":"Genealogy"},{"id":"IAB9-15","parent_id":"IAB9","name":"Getting
+        Published"},{"id":"IAB9-16","parent_id":"IAB9","name":"Guitar"},{"id":"IAB9-17","parent_id":"IAB9","name":"Home
+        Recording"},{"id":"IAB9-18","parent_id":"IAB9","name":"Investors & Patents"},{"id":"IAB9-19","parent_id":"IAB9","name":"Jewelry
+        Making"},{"id":"IAB9-20","parent_id":"IAB9","name":"Magic & Illusion"},{"id":"IAB9-21","parent_id":"IAB9","name":"Needlework"},{"id":"IAB9-22","parent_id":"IAB9","name":"Painting"},{"id":"IAB9-23","parent_id":"IAB9","name":"Photography"},{"id":"IAB9-24","parent_id":"IAB9","name":"Radio"},{"id":"IAB9-25","parent_id":"IAB9","name":"Roleplaying
+        Games"},{"id":"IAB9-26","parent_id":"IAB9","name":"Sci-Fi & Fantasy"},{"id":"IAB9-27","parent_id":"IAB9","name":"Scrapbooking"},{"id":"IAB9-28","parent_id":"IAB9","name":"Screenwriting"},{"id":"IAB9-29","parent_id":"IAB9","name":"Stamps
+        & Coins"},{"id":"IAB9-30","parent_id":"IAB9","name":"Video & Computer Games"},{"id":"IAB9-31","parent_id":"IAB9","name":"Woodworking"},{"id":"IAB10","parent_id":null,"name":"Home
+        & Garden"},{"id":"IAB10-1","parent_id":"IAB10","name":"Appliances"},{"id":"IAB10-2","parent_id":"IAB10","name":"Entertaining"},{"id":"IAB10-3","parent_id":"IAB10","name":"Environmental
+        Safety"},{"id":"IAB10-4","parent_id":"IAB10","name":"Gardening"},{"id":"IAB10-5","parent_id":"IAB10","name":"Home
+        Repair"},{"id":"IAB10-6","parent_id":"IAB10","name":"Home Theater"},{"id":"IAB10-7","parent_id":"IAB10","name":"Interior
+        Decorating"},{"id":"IAB10-8","parent_id":"IAB10","name":"Landscaping"},{"id":"IAB10-9","parent_id":"IAB10","name":"Remodeling
+        & Construction"},{"id":"IAB11","parent_id":null,"name":"Law, Gov''t & Politics"},{"id":"IAB11-1","parent_id":"IAB11","name":"Immigration"},{"id":"IAB11-2","parent_id":"IAB11","name":"Legal
+        Issues"},{"id":"IAB11-3","parent_id":"IAB11","name":"U.S. Government Resources"},{"id":"IAB11-4","parent_id":"IAB11","name":"Politics"},{"id":"IAB11-5","parent_id":"IAB11","name":"Commentary"},{"id":"IAB12","parent_id":null,"name":"News"},{"id":"IAB12-1","parent_id":"IAB12","name":"International
+        News"},{"id":"IAB12-2","parent_id":"IAB12","name":"National News"},{"id":"IAB12-3","parent_id":"IAB12","name":"Local
+        News"}],"data_type":"iab_category","total_count":392,"next_cursor":"69dcsg"}'
+    http_version: 
+  recorded_at: Tue, 26 May 2015 08:06:33 GMT
+recorded_with: VCR 2.9.3

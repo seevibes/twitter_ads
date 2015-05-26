@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ads-api.twitter.com/0/accounts/p0r8d3/promoted_tweets
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="YOi6DeIcMNGccGYVEErGhTOpb", oauth_nonce="IZVaVEAFKq39Sx8y8goZB9JhK3ggoOgyybU96WMpdc",
+        oauth_signature="PwhwPJMRluraatCd7WuLtwnnb3k%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1432627580", oauth_token="152397343-F2sSm9WuEcb7luVmppKrEXO4y6QDQzb6wkrxBgz0",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '120'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 26 May 2015 08:06:21 GMT
+      Server:
+      - tsa_b
+      Set-Cookie:
+      - guest_id=v1%3A143262758127477050; Domain=.twitter.com; Path=/; Expires=Thu,
+        25-May-2017 08:06:21 UTC
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write-directmessages
+      X-Connection-Hash:
+      - 28e34b63c77e93cd0931e2d19bdd4602
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '2000'
+      X-Rate-Limit-Remaining:
+      - '1999'
+      X-Rate-Limit-Reset:
+      - '1432628481'
+      X-Response-Time:
+      - '25'
+      X-Runtime:
+      - '0.015497'
+      X-Transaction:
+      - 54375ceb7a75abb2
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: US-ASCII
+      string: ! '{"request":{"params":{"account_id":"p0r8d3"}},"data":[],"data_type":"promoted_tweet","total_count":0,"next_cursor":null}'
+    http_version: 
+  recorded_at: Tue, 26 May 2015 08:06:21 GMT
+recorded_with: VCR 2.9.3

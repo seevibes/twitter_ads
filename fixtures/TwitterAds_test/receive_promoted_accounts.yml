@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ads-api.twitter.com/0/accounts/p0r8d3/promoted_accounts
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="YOi6DeIcMNGccGYVEErGhTOpb", oauth_nonce="YqiReBMflULjySfeTzSC0hbbssNxkZsnaVv3uiKkPg4",
+        oauth_signature="flViq%2Fd0c9bZJVPaWRmzEykOwbI%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1432627584", oauth_token="152397343-F2sSm9WuEcb7luVmppKrEXO4y6QDQzb6wkrxBgz0",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '309'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 26 May 2015 08:06:25 GMT
+      Server:
+      - tsa_a
+      Set-Cookie:
+      - guest_id=v1%3A143262758506549992; Domain=.twitter.com; Path=/; Expires=Thu,
+        25-May-2017 08:06:25 UTC
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write-directmessages
+      X-Connection-Hash:
+      - 2f19ff292126a30fe86fd80ea2ac1f5c
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '2000'
+      X-Rate-Limit-Remaining:
+      - '1999'
+      X-Rate-Limit-Reset:
+      - '1432628485'
+      X-Response-Time:
+      - '24'
+      X-Runtime:
+      - '0.015151'
+      X-Transaction:
+      - 490a66e6ad9a387f
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: US-ASCII
+      string: ! '{"request":{"params":{"account_id":"p0r8d3"}},"data":[{"line_item_id":"mj0t","user_id":"2071231","id":"a9qy","paused":false,"created_at":"2013-06-13T20:28:39Z","updated_at":"2014-12-02T03:06:17Z","approval_status":"ACCEPTED","deleted":false}],"data_type":"promoted_account","total_count":1,"next_cursor":null}'
+    http_version: 
+  recorded_at: Tue, 26 May 2015 08:06:25 GMT
+recorded_with: VCR 2.9.3

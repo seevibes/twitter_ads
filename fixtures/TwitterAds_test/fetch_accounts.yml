@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ads-api.twitter.com/0/accounts
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="YOi6DeIcMNGccGYVEErGhTOpb", oauth_nonce="BmJmo5jnaR1j64thItzPGWMMNLmUh9Yp956Jc4XG0",
+        oauth_signature="qgpaiDDmbbQywXdg%2BhwXpSoJqk0%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1432627585", oauth_token="152397343-F2sSm9WuEcb7luVmppKrEXO4y6QDQzb6wkrxBgz0",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '6163'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 26 May 2015 08:06:26 GMT
+      Server:
+      - tsa_b
+      Set-Cookie:
+      - guest_id=v1%3A143262758624098890; Domain=.twitter.com; Path=/; Expires=Thu,
+        25-May-2017 08:06:26 UTC
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write-directmessages
+      X-Connection-Hash:
+      - a94f502920be59858eecfe2ed2f1ce0c
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '2000'
+      X-Rate-Limit-Remaining:
+      - '1996'
+      X-Rate-Limit-Reset:
+      - '1432627753'
+      X-Response-Time:
+      - '20'
+      X-Runtime:
+      - '0.011655'
+      X-Transaction:
+      - 7e497bbe39aefa96
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: US-ASCII
+      string: ! '{"request":{"params":{}},"data":[{"name":"Seevibes","timezone":"America\/Los_Angeles","timezone_switch_at":null,"id":"2iqejj","created_at":"2012-04-05T22:20:13Z","salt":"875d9c7bb8ac82c1bec85c1974560a89","updated_at":"2014-12-08T19:08:01Z","approval_status":"ACCEPTED","deleted":false},{"name":"Thomas Landspurg","timezone":"America\/Los_Angeles","timezone_switch_at":null,"id":"p0r8d3","created_at":"2013-06-13T20:28:37Z","salt":"fc4d84fc78943cc321111af0a140cd5a","updated_at":"2014-12-02T03:06:17Z","approval_status":"ACCEPTED","deleted":false},{"name":"Seevibes         Fr","timezone":"America\/Los_Angeles","timezone_switch_at":null,"id":"pdvovm","created_at":"2013-06-25T07:23:30Z","salt":"a6cb5bdd18128473b734400d8fc0bd41","updated_at":"2014-12-02T06:09:23Z","approval_status":"ACCEPTED","deleted":false}],"data_type":"account","total_count":3,"next_cursor":null}'
+    http_version: 
+  recorded_at: Tue, 26 May 2015 08:06:26 GMT
+recorded_with: VCR 2.9.3
