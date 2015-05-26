@@ -1,4 +1,4 @@
-require 'OAuth'
+require 'oauth'
 require 'json'
 
 ADS_API_ENDPOINT="ads-api.twitter.com"
