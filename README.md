@@ -2,9 +2,11 @@
 Gem to simplify access to TwitterAds API
 
 Installation:
+
     gem install twitter_ads
 
 or in your Gemfile:
+
     gem 'twitter_ads'
 
 Usage:
@@ -40,11 +42,11 @@ If an operation is missing, there is two ways to add it:
 
 Just do it manually:
 
-   ads.get action,param
+    ads.get action,param
 
 Example:
 
-   ads.get "accounts"
+    ads.get "accounts"
 
 
 
