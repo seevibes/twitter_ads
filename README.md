@@ -1,6 +1,12 @@
 # twitter_ads
 Gem to simplify access to TwitterAds API
 
+Installation:
+    gem install twitter_ads
+
+or in your Gemfile:
+    gem 'twitter_ads'
+
 Usage:
 
 You need to instanciete the client with a whitlsted Twitter Ads application and a user token allowed for this app:
@@ -34,4 +40,11 @@ If an operation is missing, there is two ways to add it:
 
 Just do it manually:
 
-   ads.
+   ads.get action,param
+
+Example:
+
+   ads.get "accounts"
+
+
+

@@ -7,8 +7,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Thomas Landspurg"]
   s.email       = 'thomas@seevibes.com'
   s.files       = ["lib/twitter_ads.rb"]
-  s.homepage    =
-    'http://rubygems.org/gems/twitter_ads'
+  s.homepage    = 'https://github.com/seevibes/twitter_ads'
   s.license       = 'MIT'
   s.add_dependency  'oauth'
 end
