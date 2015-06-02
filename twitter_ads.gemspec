@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'twitter_ads'
-  s.version     = '0.0.0'
+  s.version     = '0.0.1'
   s.date        = '2015-05-22'
   s.summary     = "Simplify access to TwitterAds API"
   s.description = " "

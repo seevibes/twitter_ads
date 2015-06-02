@@ -1,3 +1,10 @@
+#
+# @ Seevibes 2015
+# Author Thomas Landspurg
+#
+# thomas@seevibes.com
+#
+#
 require 'oauth'
 require 'json'
 
@@ -6,10 +13,10 @@ TRACE=false
 # Usage:
 # Initialisation
 #
-# ads=TwitterAds::Client.new({consumer_key:"YOUR_CONSUER_KEY",
+# ads=TwitterAds::Client.new({consumer_key   :"YOUR_CONSUER_KEY",
 #	                        consumer_secret:"YOUR CONSUMER SECRET",
-#	                        access_token:"YOUR ACCESS TOKEN",
-#	                        access_secret:"YOUR ACCESS SECRET"})
+#	                        access_token   :"YOUR ACCESS TOKEN",
+#	                        access_secret  :"YOUR ACCESS SECRET"})
 # get the list of accounts:
 #  ads.accounts
 #
@@ -34,27 +41,31 @@ module TwitterAds
 
     # Common class to manage access to recourse
     # Need access to client, prefix, and ops available on this ressource
+    #
+    # provide operation oauth autenthificated operation (get/post/put/delete)
+    # as well as dynamically discovered opertions, using the ops instance variable
+    #
     class RestRessource
     	@prefix=""
     	attr:access_token,:prefix
 
 		# Utility funciton to do a get on the RES API
-		def get action="",params=nil
+		def get action = "" , params = nil
 			do_request :get,action,params
 		end
-		def post action,params=nil
+		def post action , params = nil
 			do_request :post,action,params
 		end
-		def put action,params=nil
+		def put action , params = nil
 			do_request :put,action,params
 		end
-		def delete action="",params=nil
+		def delete action = "", params = nil
 			do_request :delete,action,params
 		end
 
 		def do_request verb,action,params
 			url="https://#{ADS_API_ENDPOINT}/0/#{prefix}#{action}"
-			if url[-1]=="/" then url=url[0..-2] end
+			if url[-1] == "/" then url = url[0..-2] end
 			puts "Doing request:#{verb} #{prefix} #{action} #{params} URL:#{url}" if TRACE
 			res=::JSON.parse @client.access_token.request(verb,url,params).body
 			if res["errors"]
@@ -70,21 +81,21 @@ module TwitterAds
 		# prefix the prefix to add to the method
 		#
 		def check_method tab_ops,prefix,method_sym,do_call,*arguments, &block
-			method_sym=method_sym.id2name
+			method_sym = method_sym.id2name
 			verb=:get
 			[:post,:get,:delete,:put].each do |averb|
 				if method_sym.start_with? averb.id2name
-					verb=averb
+					verb = averb
 					method_sym[averb.id2name+"_"]=""
 					break
 				end
 			end
 			if  tab_ops[verb].include? method_sym.to_sym
 				if do_call
-					method=prefix+method_sym
-					params=arguments.first
+					method = prefix+method_sym
+					params = arguments.first
 					if params.first && params.first.class!=Hash
-						method+="/#{params.shift}"
+						method += "/#{params.shift}"
 					end
 					return do_request verb,method,params.shift
 				else
@@ -95,7 +106,7 @@ module TwitterAds
 		end
 		def method_missing(method_sym, *arguments, &block)
 			# the first argument is a Symbol, so you need to_s it if you want to pattern match
-			if (res=check_method(@ops,"",method_sym,true,arguments,block))==nil
+			if (res = check_method(@ops,"",method_sym,true,arguments,block))==nil
 				super
 			else
 				res
@@ -109,7 +120,7 @@ module TwitterAds
 		end
     end
 
-	class  Client<RestRessource
+	class  Client < RestRessource
 		attr_reader :config,:access_token,:ops
 
 		def initialize params
@@ -129,7 +140,7 @@ module TwitterAds
 		# return the list of available accounts
 		def accounts
 			if !@cached_accounts
-				@cached_accounts=get("accounts").map{|account| Account.new(self,account)}
+				@cached_accounts = get("accounts").map{|account| Account.new(self,account)}
 			end
 			@cached_accounts
 		end
@@ -141,15 +152,15 @@ module TwitterAds
 
 	end
 
-	class Account<RestRessource
+	class Account < RestRessource
 
 		attr_reader :id,:name
 		def initialize client,account
-			@client=client
-			@account=account
+			@client  = client
+			@account = account
 			init
-			@prefix="accounts/#{@id}/"
-			@ops={:get   =>[:promoted_accounts,:promoted_tweets,:tailored_audience_changes,
+			@prefix = "accounts/#{@id}/"
+			@ops ={:get   =>[:promoted_accounts,:promoted_tweets,:tailored_audience_changes,
 				            :targeting_criteria,:app_lists,:campaigns,:funding_instruments,
 				            :line_items,:promoted_accounts,:promotable_users,:reach_estimate,
 		      	            :targeting_suggestions],
@@ -160,8 +171,8 @@ module TwitterAds
 
 			end
 		def init
-			@id=@account["id"]
-			@name=@account["name"]
+			@id   = @account["id"]
+			@name = @account["name"]
 		end
 
 		def as_json
@@ -169,7 +180,7 @@ module TwitterAds
 		end
 
 		def refresh
-			@account=get("")
+			@account = get("")
 			init
 		end
 
