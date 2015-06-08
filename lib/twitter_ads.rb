@@ -73,11 +73,12 @@ module TwitterAds
       url = "https://#{ADS_API_ENDPOINT}/0/#{prefix}#{action}"
       url = url[0..-2] if url[-1] == '/'
 
+      # TODO: add a logger
       puts "Doing request:#{verb} #{prefix} #{action} #{params} URL:#{url}" if TRACE
       res = ::MultiJson.load(@client.access_token.request(verb, url, params).body)
 
-      raise AdsError, res["errors"].first["code"] if res['errors']
-
+      # TODO: pretty format the errors
+      raise AdsError, res['errors'].first['code'] if res['errors']
       res['data']
     end
 
