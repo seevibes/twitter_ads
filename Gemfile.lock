@@ -10,7 +10,6 @@ GEM
     addressable (2.3.8)
     crack (0.4.2)
       safe_yaml (~> 1.0.0)
-    json (1.8.3)
     minispec-metadata (2.0.0)
       minitest
     minitest (5.7.0)
@@ -31,7 +30,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  json
   minitest
   minitest-vcr
   multi_json

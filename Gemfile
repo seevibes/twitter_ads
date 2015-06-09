@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'json'
 gem 'oauth'
 gem 'rake'
 gem 'multi_json'

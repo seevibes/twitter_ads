@@ -6,11 +6,8 @@
 #
 #
 require 'oauth'
-require 'json'
 require 'multi_json'
 
-ADS_API_ENDPOINT = 'ads-api.twitter.com'
-TRACE = false
 
 # Usage:
 # Initialisation
@@ -38,6 +35,9 @@ TRACE = false
 #
 
 module TwitterAds
+
+  ADS_API_ENDPOINT = 'ads-api.twitter.com'
+  TRACE = false
   UnauthorizedAccess = 'UNAUTHORIZED_ACCESS'
   class AdsError < StandardError
   end
