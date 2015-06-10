@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    twitter_ads (0.0.3)
+    twitter_ads (0.0.4)
       oauth
 
 GEM

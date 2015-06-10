@@ -1,7 +1,8 @@
 Gem::Specification.new do |s|
   s.name        = 'twitter_ads'
-  s.version     = '0.0.3'
-  s.date        = '2015-06-02'
+  s.version     = '0.0.4'
+  s.date        = '2015-06-10'
+  s.required_ruby_version     = '>= 1.9.3'
   s.summary     = "Simplify access to TwitterAds API"
   s.description = " "
   s.authors     = ["Thomas Landspurg"]

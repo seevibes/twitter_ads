@@ -1,0 +1,138 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://ads-api.twitter.com/0/accounts/p0r8d3/tailored_audiences
+    body:
+      encoding: US-ASCII
+      string: list_type=TWITTER_ID&name=Fake%20Creation
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - OAuth gem v0.4.7
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - OAuth oauth_consumer_key="YOi6DeIcMNGccGYVEErGhTOpb", oauth_nonce="d2AasePukAghhmhjr3b91sLLpjrfEKT80Jfm0YSihA",
+        oauth_signature="kwaOUZRfh1mrLjVwW7P6fLNbocs%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1433943716", oauth_token="152397343-F2sSm9WuEcb7luVmppKrEXO4y6QDQzb6wkrxBgz0",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '465'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Wed, 10 Jun 2015 13:41:57 GMT
+      Server:
+      - tsa_f
+      Set-Cookie:
+      - guest_id=v1%3A143394371715175720; Domain=.twitter.com; Path=/; Expires=Fri,
+        09-Jun-2017 13:41:57 UTC
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write-directmessages
+      X-Connection-Hash:
+      - 9851d02f2a12f852ffbf9b495faec107
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '300'
+      X-Rate-Limit-Remaining:
+      - '299'
+      X-Rate-Limit-Reset:
+      - '1433943777'
+      X-Response-Time:
+      - '222'
+      X-Runtime:
+      - '0.110132'
+      X-Transaction:
+      - 1c3c5a4254d02e40
+      X-Tsa-Request-Body-Time:
+      - '83'
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: US-ASCII
+      string: ! '{"data_type":"tailored_audiences","data":{"targetable":false,"name":"Fake
+        Creation","targetable_types":["CRM","EXCLUDED_CRM"],"audience_type":"CRM","id":"seia","reasons_not_targetable":["PROCESSING","TOO_SMALL"],"list_type":"TWITTER_ID","created_at":"2015-05-26T06:39:40Z","updated_at":"2015-06-10T13:34:08Z","partner_source":"OTHER","deleted":false,"audience_size":null},"request":{"params":{"account_id":"p0r8d3","name":"Fake
+        Creation","list_type":"TWITTER_ID"}}}'
+    http_version: 
+  recorded_at: Wed, 10 Jun 2015 13:41:57 GMT
+- request:
+    method: delete
+    uri: https://ads-api.twitter.com/0/accounts/p0r8d3/tailored_audiences/seia
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="YOi6DeIcMNGccGYVEErGhTOpb", oauth_nonce="MGfcLWEqKoSO89O30esDuC08EZxed1Vf8rosGCPr7Y",
+        oauth_signature="tdYqhVfshA9fgnON66xoT9McySI%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1433943717", oauth_token="152397343-F2sSm9WuEcb7luVmppKrEXO4y6QDQzb6wkrxBgz0",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '446'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Wed, 10 Jun 2015 13:41:57 GMT
+      Server:
+      - tsa_f
+      Set-Cookie:
+      - guest_id=v1%3A143394371760425761; Domain=.twitter.com; Path=/; Expires=Fri,
+        09-Jun-2017 13:41:57 UTC
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write-directmessages
+      X-Connection-Hash:
+      - 102ef87812dba1dc5c64c3faa436d95b
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '300'
+      X-Rate-Limit-Remaining:
+      - '298'
+      X-Rate-Limit-Reset:
+      - '1433943777'
+      X-Response-Time:
+      - '240'
+      X-Runtime:
+      - '0.130556'
+      X-Transaction:
+      - 877b7d465d03141b
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: US-ASCII
+      string: ! '{"data_type":"tailored_audiences","data":{"targetable":false,"name":"Fake
+        Creation","targetable_types":["CRM","EXCLUDED_CRM"],"audience_type":"CRM","id":"seia","reasons_not_targetable":["PROCESSING","TOO_SMALL"],"list_type":"TWITTER_ID","created_at":"2015-05-26T06:39:40Z","updated_at":"2015-06-10T13:41:57Z","partner_source":"OTHER","deleted":true,"audience_size":null},"request":{"params":{"tailored_audience_id":"seia","account_id":"p0r8d3"}}}'
+    http_version: 
+  recorded_at: Wed, 10 Jun 2015 13:41:57 GMT
+recorded_with: VCR 2.9.3

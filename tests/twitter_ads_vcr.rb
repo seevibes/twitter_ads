@@ -41,6 +41,7 @@ describe 'TwitterAds test', :vcr do
     $list.size.must_be :>,0
   end
 
+  # Old form, without tailored audience class
   it "Tailored audience creation" do
     params={
           :name=>"Fake Creation",
@@ -57,6 +58,23 @@ describe 'TwitterAds test', :vcr do
     res=account.delete_tailored_audiences id
     res["name"].must_equal "Fake Creation"
   end
+
+
+  # using second form
+  it "Tailored audience creation using Tailored Audience Class" do
+    params={
+          :name=>"Fake Creation",
+          :list_type=>"TWITTER_ID"
+        }
+    res=account.post_tailored_audiences  params
+    res["name"].must_equal "Fake Creation"
+
+    ta=account.tailored_audience(res["id"])
+    res=ta.delete
+    res["name"].must_equal "Fake Creation"
+  end
+
+
 
   it "single get tailored audience change" do
     aList=account.tailored_audience_changes list.first['id']
