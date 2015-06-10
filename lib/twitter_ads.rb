@@ -12,7 +12,7 @@ require 'multi_json'
 # Usage:
 # Initialisation
 #
-# ads=TwitterAds::Client.new({consumer_key   :"YOUR_CONSUER_KEY",
+#  ads=TwitterAds::Client.new({consumer_key   :"YOUR_CONSUER_KEY",
 #	                        consumer_secret:"YOUR CONSUMER SECRET",
 #	                        access_token   :"YOUR ACCESS TOKEN",
 #	                        access_secret  :"YOUR ACCESS SECRET"})
