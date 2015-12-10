@@ -13,7 +13,7 @@ describe 'TwitterAds test', :vcr do
     rescue Errno::ENOENT
       config_client={}
     end
-    @client=TwitterAds::Client.new(config_client)
+    @client=TwitterADS::Client.new(config_client)
   end
   let(:account){@client.account("p0r8d3")}
   let(:list){account.tailored_audience_changes}
@@ -52,7 +52,7 @@ describe 'TwitterAds test', :vcr do
     id=res["id"]
     err=lambda{
       account.tailored_audience_changes id
-    }.must_raise TwitterAds::AdsError
+    }.must_raise TwitterADS::AdsError
     err.message.must_equal "TAILORED_AUDIENCE_CHANGE_FILE_NOT_FOUND"
 
     res=account.delete_tailored_audiences id
@@ -92,12 +92,12 @@ describe 'TwitterAds test', :vcr do
   it "targeting criteria all" do
     err= lambda{
       pt=account.targeting_criteria
-    }.must_raise TwitterAds::AdsError
+    }.must_raise TwitterADS::AdsError
     err.message.must_equal "MISSING_PARAMETER"
   end
 
   it "targeting criteria" do
-    assert_raises TwitterAds::AdsError do
+    assert_raises TwitterADS::AdsError do
       pt=account.targeting_criteria("1")
     end
   end

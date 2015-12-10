@@ -1,5 +1,5 @@
 # twitter_ads
-Gem to simplify access to TwitterAds API
+Gem to simplify access to TwitterADS API
 
 Installation:
 
@@ -13,7 +13,7 @@ Usage:
 
 You need to instanciete the client with a whitlsted Twitter Ads application and a user token allowed for this app:
 
-     ads=TwitterAds::Client.new({consumer_key:"YOUR_CONSUER_KEY",
+     ads=TwitterADS::Client.new({consumer_key:"YOUR_CONSUER_KEY",
 	                         consumer_secret:"YOUR CONSUMER SECRET",
 	                        access_token:"YOUR ACCESS TOKEN",
 	                        access_secret:"YOUR ACCESS SECRET"})

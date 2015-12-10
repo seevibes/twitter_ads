@@ -12,14 +12,14 @@ require 'multi_json'
 # Usage:
 # Initialisation
 #
-#  ads=TwitterAds::Client.new({consumer_key   :"YOUR_CONSUER_KEY",
+#  ads=TwitterADS::Client.new({consumer_key   :"YOUR_CONSUER_KEY",
 #	                        consumer_secret:"YOUR CONSUMER SECRET",
 #	                        access_token   :"YOUR ACCESS TOKEN",
 #	                        access_secret  :"YOUR ACCESS SECRET"})
 # get the list of accounts:
 #  ads.accounts
 #
-# get info on a specfic account
+# get info on a specific account
 # account = ads.account[account_id]
 #
 #  get tailored_audience change
@@ -34,7 +34,7 @@ require 'multi_json'
 # same with post, put, delete
 #
 
-module TwitterAds
+module TwitterADS
 
   ADS_API_ENDPOINT = 'ads-api.twitter.com'
   TRACE = true
@@ -43,7 +43,7 @@ module TwitterAds
   end
 
 end
-require "twitter_ads/rest_ressource"
+require "twitter_ads/rest_resource"
 require "twitter_ads/client"
 require "twitter_ads/account"
 require "twitter_ads/tailored_audience"

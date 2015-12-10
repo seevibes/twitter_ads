@@ -7,7 +7,7 @@
 #
 
 
-module TwitterAds
+module TwitterADS
 
 
 

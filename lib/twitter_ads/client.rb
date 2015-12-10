@@ -6,7 +6,7 @@
 #
 #
 
-module TwitterAds
+module TwitterADS
 
 
   class Client < RestResource
@@ -32,7 +32,7 @@ module TwitterAds
 
     # Create an account based on his id
     def account(account_id)
-      TwitterAds::Account.new(self, {'id' => account_id})
+      TwitterADS::Account.new(self, {'id' => account_id})
     end
   end
 

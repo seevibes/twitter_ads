@@ -7,7 +7,7 @@
 #
 
 
-module TwitterAds
+module TwitterADS
 
 
   class Account < RestResource
@@ -36,7 +36,7 @@ module TwitterAds
     end
 
     def tailored_audience tailored_audience_id
-      TwitterAds::TailoredAudience.new(self, {'id' => tailored_audience_id})
+      TwitterADS::TailoredAudience.new(self, {'id' => tailored_audience_id})
     end
   end
 

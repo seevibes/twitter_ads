@@ -6,7 +6,7 @@
 #
 #
 
-module TwitterAds
+module TwitterADS
 
   class TailoredAudience < RestResource
 
